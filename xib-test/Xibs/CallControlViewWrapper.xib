@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CallControlViewWrapper" customModule="xib_test" customModuleProvider="target">
+            <connections>
+                <outlet property="containerView" destination="9UL-Hc-tQ9" id="l6R-04-iGV"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="9UL-Hc-tQ9">
+            <rect key="frame" x="0.0" y="0.0" width="305" height="233"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="pLs-Jo-JB6">
+                    <rect key="frame" x="0.0" y="0.0" width="305" height="233"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vcj-K6-7pc" customClass="CallControlView" customModule="xib_test" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="305" height="128"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F8d-Ld-eEK">
+                            <rect key="frame" x="0.0" y="136" width="305" height="97"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="Middle"/>
+                            <connections>
+                                <action selector="click:" destination="-1" eventType="touchUpInside" id="Nqn-KI-HsA"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="pLs-Jo-JB6" secondAttribute="trailing" id="Dnj-Tc-V1c"/>
+                <constraint firstAttribute="bottom" secondItem="pLs-Jo-JB6" secondAttribute="bottom" id="Hgc-ym-b9Y"/>
+                <constraint firstItem="pLs-Jo-JB6" firstAttribute="top" secondItem="9UL-Hc-tQ9" secondAttribute="top" id="eRC-GP-Nxi"/>
+                <constraint firstItem="pLs-Jo-JB6" firstAttribute="leading" secondItem="9UL-Hc-tQ9" secondAttribute="leading" id="ert-kf-1Sl"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="58.695652173913047" y="-69.308035714285708"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
